@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Trader’s Reference</title>
+<meta name="description" content="Advanced trading strategies, technical analysis frameworks and a curated directory of market platforms.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"></div>
+<header class="nav glass">
+  <a class="brand" href="#top"><span class="dot"></span>The Trader’s <b>Reference</b></a>
+  <nav><a href="#lab">Strategy Lab</a><a href="#scenarios">Scenarios</a><a href="#handbook">Handbook</a><a href="#patterns">Patterns</a><a href="#risk">Risk</a><a href="#platforms">Platforms</a><a href="#brokers">Brokers</a><a href="#exchanges">Exchanges</a><a href="#knowledge">Knowledge</a><a href="#glossary">Glossary</a></nav>
+</header>
+
+
+<main id="top">
+<section class="hero split">
+  <div class="copy reveal">
+    <p class="eyebrow">Institutional Playbook</p>
+    <h1>Trade like the<br><span class="grad">other side of the book.</span></h1>
+    <p class="lead">A research-grade reference for systematic and discretionary traders: market structure, volatility regimes, execution rules and risk mathematics. Distilled to what actually moves capital.</p>
+    <ul class="stats">
+      <li><strong>5</strong><span>Core strategies</span></li>
+      <li><strong>18</strong><span>Brokers &amp; crypto venues</span></li>
+      <li><strong>100</strong><span>Worked scenarios</span></li><li><strong>14</strong><span>Global exchanges</span></li>
+    </ul>
+  </div>
+  <div class="tilt glass hero-card reveal">
+    <div class="card-head"><span>Illustrative chart</span><span class="up">Bollinger Bands</span></div>
+    <canvas id="heroChart" height="260"></canvas>
+    <p class="fine">Illustrative example for educational purposes. Not market data.</p>
+  </div>
+</section>
+
+<section id="lab" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Strategy Lab</p><h2>Read the chart. Define the trade.</h2>
+  <p class="lead">Choose a strategy, toggle the indicators, and inspect a fully specified setup with entry, stop-loss and take-profit zones.</p></div>
+  <div class="split lab">
+    <aside class="reveal">
+      <div class="tabs" id="stratTabs" role="tablist"></div>
+      <article class="glass panel" id="stratBody"></article>
+    </aside>
+    <div class="reveal">
+      <div class="tilt glass chart-card">
+        <div class="toggles" id="toggles"></div>
+        <canvas id="labChart" height="460"></canvas>
+        <div class="legend"><i class="g"></i>Take-profit zone <i class="r"></i>Stop-loss zone <i class="w"></i>Entry</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scenarios" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Scenario Library</p><h2 id="scenTitle">20 worked scenarios.</h2>
+  <p class="lead">Every row is a hypothetical position-sizing calculation using the formula shares = (account × risk %) ÷ (entry − stop). Pick a strategy in the Lab above to switch the table. The arithmetic is exact; the prices are round hypothetical inputs, not market quotes.</p></div>
+  <div class="tablewrap reveal"><table id="scenTable"></table></div>
+</section>
+
+<section id="handbook" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Strategy Handbook</p><h2>Five playbooks, in depth.</h2>
+  <p class="lead">Each chapter covers the logic, the filters, the exact arithmetic of a worked trade and the failure modes. All prices in the examples are hypothetical round numbers; the math is exact.</p></div>
+  <div id="chapters"></div>
+</section>
+
+<section id="patterns" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Pattern Atlas</p><h2>Eight chart patterns and their measured moves.</h2>
+  <p class="lead">Patterns are probabilities, not promises. The projected targets below are conventions used by technicians, not forecasts, and each example uses hypothetical round numbers.</p></div>
+  <div class="grid" id="patGrid"></div>
+  <div class="section-head reveal" style="margin-top:70px"><p class="eyebrow">Regime Map</p><h2>Which strategy fits which market?</h2>
+  <p class="lead">General tendencies only. Regimes shift, and any strategy can fail in its favored environment.</p></div>
+  <div class="tablewrap reveal"><table id="regTable"></table></div>
+</section>
+
+<section id="risk" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Risk Rulebook &amp; Options Mechanics</p><h2>Survive first. Compound second.</h2></div>
+  <div id="riskBody"></div>
+</section>
+
+<section id="platforms" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Ecosystem Directory</p><h2>The market-overview stack.</h2>
+  <p class="lead">Independent assessments of the platforms professionals use to chart, scan and monitor markets.</p></div>
+  <div class="grid" id="platformGrid"></div>
+</section>
+
+<section id="brokers" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Brokers &amp; Crypto Venues</p><h2>Where retail and professionals access markets.</h2>
+  <p class="lead">Eighteen well-known brokers and crypto exchanges, listed neutrally with links to their official sites. Availability, fees, regulation and product range differ by country; verify these directly with each provider. Leveraged products and crypto assets carry a high risk of loss.</p></div>
+  <div class="grid" id="brokGrid"></div>
+</section>
+
+<section id="exchanges" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Global Exchanges</p><h2>Where the world trades.</h2>
+  <p class="lead">Fourteen of the best-known exchanges and market operators, with links to their official sites. Check each site for current listings, hours and index details.</p></div>
+  <div class="grid" id="exchGrid"></div>
+</section>
+
+<section id="knowledge" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Knowledge Base</p><h2>The foundations beneath every edge.</h2></div>
+  <div id="articles"></div>
+</section>
+<section id="glossary" class="section">
+  <div class="section-head reveal"><p class="eyebrow">Glossary</p><h2>The vocabulary every trader must own.</h2></div>
+  <dl class="gloss" id="glossary-list"></dl>
+</section>
+</main>
+
+<footer class="foot">
+  <p>This site is an educational reference. Nothing here is investment advice. Trading leveraged instruments carries a high risk of loss. All charts use synthetic data.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
